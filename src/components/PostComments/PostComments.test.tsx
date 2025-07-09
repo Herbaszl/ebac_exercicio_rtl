@@ -1,8 +1,8 @@
 import { render, screen, fireEvent } from '@testing-library/react';
 import Post from './index'; 
 
-describe('Testes para o componente de Post', () => {
-    test('Deve adicionar dois comentários na lista ao submeter o formulário', () => {
+describe('Testes para o componente PostComments', () => {
+    test('Deverão ter dois comentários na lista ao fazer envio do formulário', () => {
         
         render(<Post />);
         fireEvent.change(screen.getByTestId('comment-texto'), {
